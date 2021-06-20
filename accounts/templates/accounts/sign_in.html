@@ -1,0 +1,12 @@
+{%extends 'base_layout.html'%}
+
+{%block content%}
+<h1 class="text-center mt-4">Sign In</h1>
+<form class="site-form text-center mt-4" style="margin-top: 40px;" action="/accounts/sign_in/" method="post">
+ {% csrf_token %}
+ {{ form }}
+   <input type="submit" class="btn btn-outline-danger" value="Sign In">
+</form>
+<p class="text-center mt-4" style="margin-top: 10px;">belum punya akun? silahkan daftar di<a href="/accounts/sign_up/">  sini</a></p>
+{% endblock %}
+<a href="#"></a>

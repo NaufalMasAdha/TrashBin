@@ -1,0 +1,58 @@
+head{
+  background-image: url(/static/green.png);
+  background-size: 400px;
+  background-position: bottom;
+  background-color: #A3EBB1;
+  background-image: url(/static/sampah2.png);
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.navbar{
+
+}
+.site-form{
+  margin-top: 60px;
+  padding: 20px;
+}
+.container{
+  background-color: white;
+}
+.site-form input, .site-form textarea{
+  display: block;
+  margin: 20px 0;
+  padding: 10px;
+}
+body{
+  background-size: auto;
+  background-position:top;
+  background-color: #A3EBB1;
+  background-image: url(/static/sampah2.png);
+  background-repeat: no-repeat;
+  color: #fff;
+}
+body *{
+  font-family: Helvetica, sans-serif;
+}
+h1{
+  font-style: sans-serif;
+  font-weight: bolder;
+  font-size: 11px;
+}
+h2, h3, h4, h5{
+  font-size: 1px;
+  font-weight: normal;
+  margin: 0;
+}
+p{
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 22px;
+}
+
+a, a:hover, a:visited{
+  color: #fff;
+  text-decoration: none;
+}
+div.Deskripsi h1{
+  text-align: center;
+}

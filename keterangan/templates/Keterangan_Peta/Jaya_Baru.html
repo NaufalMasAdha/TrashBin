@@ -1,0 +1,211 @@
+{%extends 'base_layout.html'%}
+{%load static%}
+{%block content%}
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_909e22ffc7174b9abf3403911f728eeb {
+                    position: relative;
+                    width: 1000.0px;
+                    height: 500.0px;
+                    left: 15.0%;
+                    top: 0.0%;
+                }
+            </style>
+
+</head>
+<body>
+  <div class="col-sm">
+    <div class="card text-center" style="border-radius: 15px;">
+      <div class="card-body" style="height: 400px;">
+        <p class="card-text" style="color: #2E5238; font-family: 'Poppins', sans-serif; font-size: 20px;">Keteangan Lokasi Tempat sampah Kecamatan Jaya Baru</p>
+      <div class="folium-map" id="map_909e22ffc7174b9abf3403911f728eeb"></div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+
+            var map_909e22ffc7174b9abf3403911f728eeb = L.map(
+                "map_909e22ffc7174b9abf3403911f728eeb",
+                {
+                    center: [5.534980556395775, 95.29450953309046],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+
+
+
+
+            var tile_layer_76a42407fce345b5bacf897733924dd2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_909e22ffc7174b9abf3403911f728eeb);
+
+
+            var marker_82fbcab7ab734ba1a3a5b4423875374d = L.marker(
+                [5.532484302883905, 95.29852223955075],
+                {}
+            ).addTo(map_909e22ffc7174b9abf3403911f728eeb);
+
+
+            var icon_36c0e7c8edaf4b6f83fb00b4098b535a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "trash", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_82fbcab7ab734ba1a3a5b4423875374d.setIcon(icon_36c0e7c8edaf4b6f83fb00b4098b535a);
+
+
+            marker_82fbcab7ab734ba1a3a5b4423875374d.bindTooltip(
+                `<div>
+                     Lokasi Tempat Sampah
+                 </div>`,
+                {"sticky": true}
+            );
+
+
+            var marker_2c366a9c0e1144a5ae7a1e4acdc6c31c = L.marker(
+                [5.534716501306239, 95.28778347543007],
+                {}
+            ).addTo(map_909e22ffc7174b9abf3403911f728eeb);
+
+
+            var icon_0965a211beee4734a8273176df609661 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "trash", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2c366a9c0e1144a5ae7a1e4acdc6c31c.setIcon(icon_0965a211beee4734a8273176df609661);
+
+
+            marker_2c366a9c0e1144a5ae7a1e4acdc6c31c.bindTooltip(
+                `<div>
+                     Lokasi Tempat Sampah
+                 </div>`,
+                {"sticky": true}
+            );
+
+
+            var marker_f18dbfb1d0e34c108a32286af3d81a44 = L.marker(
+                [5.5317691426979865, 95.2944236442143],
+                {}
+            ).addTo(map_909e22ffc7174b9abf3403911f728eeb);
+
+
+            var icon_66ac0f613d2d4d9f801a359c6dad0868 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "trash", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f18dbfb1d0e34c108a32286af3d81a44.setIcon(icon_66ac0f613d2d4d9f801a359c6dad0868);
+
+
+            marker_f18dbfb1d0e34c108a32286af3d81a44.bindTooltip(
+                `<div>
+                     Lokasi Tempat Sampah
+                 </div>`,
+                {"sticky": true}
+            );
+
+
+            var marker_e758750e140849e3988f643cdfbd5569 = L.marker(
+                [5.531263029122158, 95.29938881547818],
+                {}
+            ).addTo(map_909e22ffc7174b9abf3403911f728eeb);
+
+
+            var icon_cf757c0e46384bacad6a69f49ad10d4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "trash", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e758750e140849e3988f643cdfbd5569.setIcon(icon_cf757c0e46384bacad6a69f49ad10d4e);
+
+
+            marker_e758750e140849e3988f643cdfbd5569.bindTooltip(
+                `<div>
+                     Lokasi Tempat Sampah
+                 </div>`,
+                {"sticky": true}
+            );
+
+
+            var marker_cdea393a8bd24cc4961fbc0c90956977 = L.marker(
+                [5.527243876634138, 95.29858122739054],
+                {}
+            ).addTo(map_909e22ffc7174b9abf3403911f728eeb);
+
+
+            var icon_a6f96ef053394acc9bccb876ac29185e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "trash", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cdea393a8bd24cc4961fbc0c90956977.setIcon(icon_a6f96ef053394acc9bccb876ac29185e);
+
+
+            marker_cdea393a8bd24cc4961fbc0c90956977.bindTooltip(
+                `<div>
+                     Lokasi Tempat Sampah
+                 </div>`,
+                {"sticky": true}
+            );
+
+
+            var marker_89394fcaf8ef4de1ace7107a16cf65c7 = L.marker(
+                [5.538050869092404, 95.291881237267],
+                {}
+            ).addTo(map_909e22ffc7174b9abf3403911f728eeb);
+
+
+            var icon_c64e06b684e1496bb2fe403e8f7ece2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "trash", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_89394fcaf8ef4de1ace7107a16cf65c7.setIcon(icon_c64e06b684e1496bb2fe403e8f7ece2d);
+
+
+            marker_89394fcaf8ef4de1ace7107a16cf65c7.bindTooltip(
+                `<div>
+                     Lokasi Tempat Sampah
+                 </div>`,
+                {"sticky": true}
+            );
+
+
+            var marker_e950034ae3e846a59ec267849bbb1c58 = L.marker(
+                [5.532751597207345, 95.28601874585175],
+                {}
+            ).addTo(map_909e22ffc7174b9abf3403911f728eeb);
+
+
+            var icon_5106ac5001d1409689145850ebae9efc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "trash", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e950034ae3e846a59ec267849bbb1c58.setIcon(icon_5106ac5001d1409689145850ebae9efc);
+
+
+            marker_e950034ae3e846a59ec267849bbb1c58.bindTooltip(
+                `<div>
+                     Lokasi Tempat Sampah
+                 </div>`,
+                {"sticky": true}
+            );
+
+</script>
+{%endblock%}

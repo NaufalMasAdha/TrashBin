@@ -1,0 +1,37 @@
+{%extends 'base_layout.html'%}
+{%load static%}
+{%block content%}
+
+<div class="container">
+
+
+<h1 class="text-center mt-4">Silahkan pilih fitur-fitur berikut ini</h1>
+
+<div class="row" style="margin-left: 40px; margin-right: 40px; margin-top: 50px;">
+
+        <div class="col-sm">
+          <div class="card text-center" style="border-radius: 15px;">
+            <div class="card-body" style="height: 400px;">
+                <picture>
+                    <img src="{%static 'deskripsi peta.png'%}" class="mx-auto mt-4" alt="..." style="height: 300px; width: 300px; margin-bottom: 80px;">
+                  </picture>
+              <p class="card-text" style="color: #2E5238; font-family: 'Poppins', sans-serif; font-size: 20px;">Keterangan Lokasi Tempat Sampah</p>
+            </div>
+            <a type="button" class="btn btn-success" style="margin-top: 20px;" href="http://127.0.0.1:8000/keterangan_list/">Learn More</a>
+
+          </div>
+        </div>
+        <div class="col-sm">
+            <div class="card text-center" style="border-radius: 15px;">
+              <div class="card-body" style="height: 400px;">
+                  <picture>
+                      <source srcset="..." type="...">
+                      <img src="{%static 'pelaporan.png'%}" class="mx-auto mt-4" alt="..." style="height: 300px; width: 300px; margin-bottom: 80px;">
+                    </picture>
+                <p class="card-text" style="color: #2E5238; font-family: 'Poppins', sans-serif; font-size: 20px;">Pelaporan penyimpangan ketertiban sampah</p>
+              </div>
+              <a type="button" class="btn btn-success" style="margin-top: 20px;" href="http://127.0.0.1:8000/pelaporan/pesan_pelaporan">Learn More</a>
+            </div>
+          </div>
+</div>
+{%endblock%}

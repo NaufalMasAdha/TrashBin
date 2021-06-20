@@ -1,0 +1,13 @@
+{%extends 'base_layout.html'%}
+
+{%block content%}
+
+<div class="create-laporan">
+  <h2 class="text-center mt-4">Laporkan terkait penyimpangan ketertiban sampah di lokasi tertentu pada borang berikut ini</h2>
+  <form class="site-form" action="/pelaporan/pesan_pelaporan/" method="post"enctype="mulltipart/form-data">
+    {%csrf_token%}
+    {{form}}
+    <input type="submit" name="" value="Kirim">
+  </form>
+</div>
+{%endblock%}
